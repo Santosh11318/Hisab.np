@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hisaab.np — Nepal's Largest Financial Calculator Platform | SIP, EMI, Tax &amp; More</title>
+<meta name="description" content="56+ free financial calculators built for Nepal — SIP, EMI, income tax, retirement, VAT, and trading tools with Nepali rupee support, charts and PDF export.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hisaab.np/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hisaab.np — Nepal's Financial Calculator Platform">
+<meta property="og:description" content="40+ free calculators for investment, loan, tax, business, retirement and trading — built for Nepal.">
+<meta property="og:url" content="https://hisaab.np/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hisaab.np — Nepal's Financial Calculator Platform">
+<meta name="twitter:description" content="40+ free calculators for investment, loan, tax, business, retirement and trading — built for Nepal.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23A63446%22/><path d=%22M4 24 L11 12 L15 17 L20 8 L28 24 Z%22 fill=%22%23D9A441%22/></svg>">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Hisaab.np",
+  "url": "https://hisaab.np/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://hisaab.np/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hisaab.np",
+  "url": "https://hisaab.np/",
+  "description": "Nepal's largest collection of free financial calculators for investment, loan, tax, business, retirement and trading."
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--crimson)"/><path d="M4 24 L11 12 L15 17 L20 8 L28 24 Z" fill="var(--marigold)"/></svg>
+      <span>Hisaab<span style="color:var(--crimson)">.np</span><small data-i18n="brand_tag">Nepal's Financial Calculators</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="#categories" data-i18n="nav_investment">Investment</a>
+        <div class="mega">
+          <div>
+            <div class="mega-head" data-i18n="nav_mega_popular">Popular</div>
+            <a href="calculators/sip-calculator.html">SIP Calculator</a>
+            <a href="#">Lumpsum Calculator</a>
+            <a href="#">Step-up SIP Calculator</a>
+          </div>
+          <div>
+            <div class="mega-head">Growth</div>
+            <a href="#">CAGR Calculator</a>
+            <a href="#">XIRR Calculator</a>
+            <a href="#">SWP Calculator</a>
+          </div>
+          <div>
+            <div class="mega-head" data-i18n="nav_mega_all">All calculators</div>
+            <a href="#">Crorepati Calculator</a>
+            <a href="#">Goal SIP Calculator</a>
+            <a href="all-calculators.html">View all →</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="calculators/emi-calculator.html" data-i18n="nav_loan">Loan</a></li>
+      <li><a class="nav-link" href="calculators/income-tax-calculator.html" data-i18n="nav_tax">Tax</a></li>
+      <li><a class="nav-link" href="#categories" data-i18n="nav_business">Business</a></li>
+      <li><a class="nav-link" href="calculators/retirement-calculator.html" data-i18n="nav_retirement">Retirement</a></li>
+      <li><a class="nav-link" href="#categories" data-i18n="nav_trading">Trading</a></li>
+      <li><a class="nav-link" href="#blog" data-i18n="nav_blog">Guides</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="pill-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="np">नेपाली</button>
+      </div>
+      <button class="btn-icon theme-btn" aria-label="Toggle theme" data-i18n-title="theme_toggle"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-toggle btn-icon" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <div class="container" style="display:flex;flex-direction:column;gap:4px;padding:14px 24px 24px;">
+      <a href="all-calculators.html" class="nav-link">All calculators</a>
+      <a href="calculators/sip-calculator.html" class="nav-link">SIP Calculator</a>
+      <a href="calculators/emi-calculator.html" class="nav-link">EMI Calculator</a>
+      <a href="calculators/income-tax-calculator.html" class="nav-link">Income Tax Calculator</a>
+      <a href="calculators/retirement-calculator.html" class="nav-link">Retirement Calculator</a>
+      <a href="#blog" class="nav-link">Guides</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.mobile-nav{display:none;background:var(--paper);border-bottom:1px solid var(--line);}
+.mobile-nav.open{display:block;}
+</style>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow" data-i18n="hero_eyebrow">Made for Nepal, Rupee-first</span>
+      <h1><span data-i18n="hero_h1_1">Every rupee decision,</span><br><em data-i18n="hero_h1_2">calculated clearly.</em></h1>
+      <p class="hero-lede" data-i18n="hero_lede">Hisaab.np brings together 40+ free calculators for SIP, EMI, tax, retirement, business and trading — built for Nepal's currency, tax slabs and financial habits.</p>
+      <div class="hero-actions">
+        <a href="calculators/sip-calculator.html" class="btn btn-primary" data-i18n="hero_cta_primary">Start with SIP Calculator</a>
+        <a href="all-calculators.html" class="btn btn-ghost" data-i18n="hero_cta_ghost">Browse all calculators</a>
+      </div>
+      <div class="hero-search">
+        <form role="search">
+          <input type="text" data-i18n-ph="search_ph" placeholder="Search 40+ calculators — SIP, EMI, tax…" aria-label="Search calculators">
+          <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="search-results"></div>
+      </div>
+      <div class="hero-stats">
+        <div><b data-i18n="hero_stat1_n">56+</b><span data-i18n="hero_stat1_l">Calculators</span></div>
+        <div><b data-i18n="hero_stat2_n">6</b><span data-i18n="hero_stat2_l">Categories</span></div>
+        <div><b data-i18n="hero_stat3_n">NPR</b><span data-i18n="hero_stat3_l">Native currency</span></div>
+      </div>
+    </div>
+
+    <div class="ridge-wrap" data-aos>
+      <svg viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rising line chart shaped like a Himalayan ridgeline">
+        <line class="ridge-grid" x1="0" y1="120" x2="560" y2="120"/>
+        <line class="ridge-grid" x1="0" y1="240" x2="560" y2="240"/>
+        <line class="ridge-grid" x1="0" y1="360" x2="560" y2="360"/>
+        <path class="ridge-fill" fill="var(--pine)" d="M20,420 L90,300 L140,340 L200,220 L260,260 L320,150 L380,190 L440,90 L500,130 L540,60 L540,470 L20,470 Z"/>
+        <path class="ridge-line" d="M20,420 L90,300 L140,340 L200,220 L260,260 L320,150 L380,190 L440,90 L500,130 L540,60" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.2s ease forwards .2s;"/>
+        <circle class="ridge-dot" cx="140" cy="340" r="6"/>
+        <text class="ridge-label" x="150" y="336">EMI</text>
+        <circle class="ridge-dot" cx="260" cy="260" r="6"/>
+        <text class="ridge-label" x="270" y="256">Tax</text>
+        <circle class="ridge-dot" cx="380" cy="190" r="6"/>
+        <text class="ridge-label" x="390" y="186">SIP</text>
+        <circle class="ridge-dot" cx="500" cy="130" r="6"/>
+        <text class="ridge-label" x="454" y="112">Retirement</text>
+      </svg>
+      <style>@keyframes draw{to{stroke-dashoffset:0;}}</style>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top:44px;" data-aos>
+    <div class="eyebrow" style="margin-bottom:14px;" data-i18n="hero_popular_lbl">Trending now</div>
+    <div class="pill-row">
+      <a href="calculators/sip-calculator.html">SIP Calculator</a>
+      <a href="calculators/emi-calculator.html">Home Loan EMI</a>
+      <a href="calculators/income-tax-calculator.html">Income Tax Calculator</a>
+      <a href="calculators/retirement-calculator.html">Retirement Corpus</a>
+      <a href="#">CAGR Calculator</a>
+      <a href="#">GST Calculator</a>
+      <a href="#">Brokerage Calculator</a>
+    </div>
+  </div>
+</header>
+
+<svg class="ridge-divider" viewBox="0 0 1440 64" preserveAspectRatio="none"><path d="M0,64 L0,40 L120,10 L260,44 L420,4 L600,36 L780,14 L960,42 L1140,8 L1320,38 L1440,20 L1440,64 Z"/></svg>
+
+<!-- ============ CATEGORIES ============ -->
+<section id="categories" style="background:var(--paper-alt);">
+  <div class="container">
+    <div class="section-head" data-aos>
+      <div>
+        <span class="eyebrow" data-i18n="cat_eyebrow">Six categories, one destination</span>
+        <h2 data-i18n="cat_h2">Find the right calculator</h2>
+      </div>
+      <p data-i18n="cat_p">Every calculator is built with Nepal's tax rules, loan practices and market conventions in mind.</p>
+    </div>
+    <div class="bento">
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--pine);"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Investment</h3>
+        <p data-i18n="cat_investment_d">SIP, lumpsum, SWP, CAGR, XIRR and 8 more.</p>
+        <span class="cat-count">13 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#investment"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--crimson);"><i class="fa-solid fa-house-chimney"></i></div>
+        <h3>Loan</h3>
+        <p data-i18n="cat_loan_d">EMI, eligibility, prepayment, balance transfer.</p>
+        <span class="cat-count">12 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#loan"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--marigold-dp);"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <h3>Tax</h3>
+        <p data-i18n="cat_tax_d">Income tax, salary tax, capital gain.</p>
+        <span class="cat-count">7 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#tax"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--ink);"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Business</h3>
+        <p data-i18n="cat_business_d">GST, VAT, break-even, cash flow.</p>
+        <span class="cat-count">10 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#business"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--pine-dp);"><i class="fa-solid fa-umbrella-beach"></i></div>
+        <h3>Retirement</h3>
+        <p data-i18n="cat_retirement_d">Corpus, pension, FIRE, goal planning.</p>
+        <span class="cat-count">8 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#retirement"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" data-aos>
+        <div class="cat-icon" style="background:var(--crimson-dp);"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <h3>Trading</h3>
+        <p data-i18n="cat_trading_d">Brokerage, risk-reward, position size.</p>
+        <span class="cat-count">9 <span data-i18n="cat_link">calculators</span></span>
+        <a class="cat-link" href="all-calculators.html#trading"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED CALCULATORS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head" data-aos>
+      <div>
+        <span class="eyebrow" data-i18n="feat_eyebrow">Freshly built</span>
+        <h2 data-i18n="feat_h2">Flagship calculators</h2>
+      </div>
+      <p data-i18n="feat_p">Start here — the four most-used tools, fully interactive with charts and PDF export.</p>
+    </div>
+    <div class="swiper feat-swiper" data-aos>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="calculators/sip-calculator.html" class="calc-card">
+            <span class="tag">Investment</span>
+            <h4>SIP Calculator</h4>
+            <p>Project the future value of your monthly mutual-fund SIP with a growth chart and yearly breakdown.</p>
+            <span class="go">Calculate <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="calculators/emi-calculator.html" class="calc-card">
+            <span class="tag">Loan</span>
+            <h4>Home Loan EMI Calculator</h4>
+            <p>Work out your monthly EMI, total interest and a full amortization schedule for any loan.</p>
+            <span class="go">Calculate <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="calculators/income-tax-calculator.html" class="calc-card">
+            <span class="tag">Tax</span>
+            <h4>Income Tax Calculator</h4>
+            <p>Estimate your annual tax liability under Nepal's current slab rates, with a slab-wise breakdown.</p>
+            <span class="go">Calculate <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="calculators/retirement-calculator.html" class="calc-card">
+            <span class="tag">Retirement</span>
+            <h4>Retirement Corpus Calculator</h4>
+            <p>Find out how much you need to save monthly to retire comfortably, adjusted for inflation.</p>
+            <span class="go">Calculate <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / TIPS ============ -->
+<section id="blog" style="background:var(--paper-alt);">
+  <div class="container">
+    <div class="section-head" data-aos>
+      <div>
+        <span class="eyebrow">Financial Blog</span>
+        <h2>Guides to plan your money</h2>
+      </div>
+      <p>Practical, Nepal-specific reading to go with every calculator.</p>
+    </div>
+    <div class="bento">
+      <div class="cat-card" style="grid-column:span 2;" data-aos>
+        <span class="badge"><i class="fa-solid fa-seedling"></i> Investment Guide</span>
+        <h3 style="margin-top:16px;">SIP vs Lumpsum: what suits a Nepali investor?</h3>
+        <p>How to choose between staggered and one-time mutual fund investing depending on your income pattern.</p>
+        <a class="go" style="color:var(--crimson);font-weight:700;font-size:13px;" href="#">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" style="grid-column:span 2;" data-aos>
+        <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Tax Guide</span>
+        <h3 style="margin-top:16px;">Understanding Nepal's income tax slabs</h3>
+        <p>A plain-language walkthrough of resident individual tax slabs and common deductions.</p>
+        <a class="go" style="color:var(--crimson);font-weight:700;font-size:13px;" href="#">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-card" style="grid-column:span 2;" data-aos>
+        <span class="badge"><i class="fa-solid fa-piggy-bank"></i> Financial Freedom</span>
+        <h3 style="margin-top:16px;">Building an emergency fund on a Nepali salary</h3>
+        <p>A realistic monthly target and where to park it so it stays liquid but still earns something.</p>
+        <a class="go" style="color:var(--crimson);font-weight:700;font-size:13px;" href="#">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head" data-aos>
+      <div>
+        <span class="eyebrow" data-i18n="tips_eyebrow">Trusted by 12,000+ users</span>
+        <h2 data-i18n="tips_h2">What people say</h2>
+      </div>
+    </div>
+    <div class="swiper testi-swiper" data-aos>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"I compared three home loan offers in ten minutes using the EMI calculator's amortization table."</p>
+            <div class="testi-who"><div class="testi-avatar">RS</div><div><b>Rojina Shrestha</b><span>Kathmandu</span></div></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"The SIP calculator's chart finally made compounding click for me — I upped my monthly SIP after seeing it."</p>
+            <div class="testi-who"><div class="testi-avatar">BT</div><div><b>Bikash Tamang</b><span>Pokhara</span></div></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"First calculator I've found that actually uses Nepal's tax slabs correctly, not Indian ones."</p>
+            <div class="testi-who"><div class="testi-avatar">AP</div><div><b>Anjali Poudel</b><span>Lalitpur</span></div></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"Simple, fast, and I could download a PDF summary to share with my spouse before we decided."</p>
+            <div class="testi-who"><div class="testi-avatar">SK</div><div><b>Sujan Karki</b><span>Biratnagar</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section style="background:var(--paper-alt);">
+  <div class="container" style="max-width:840px;">
+    <div class="section-head" data-aos>
+      <div>
+        <span class="eyebrow" data-i18n="faq_eyebrow">Good to know</span>
+        <h2 data-i18n="faq_h2">Frequently asked</h2>
+      </div>
+    </div>
+    <div class="faq-list" data-aos>
+      <div class="faq-item open">
+        <button class="faq-q">Are Hisaab.np calculators free to use? <i class="fa-solid fa-plus"></i></button>
+        <div class="faq-a" style="max-height:200px;"><p>Yes — every calculator on Hisaab.np is completely free, with no sign-up required. We may add optional premium features like saved portfolios in the future.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are these calculators accurate for Nepal's tax rules? <i class="fa-solid fa-plus"></i></button>
+        <div class="faq-a"><p>Yes, our tax and loan calculators follow the Inland Revenue Department's current slab rates and common Nepali bank conventions. Results are still estimates — always confirm with a tax professional or your bank before deciding.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I save or export my calculation? <i class="fa-solid fa-plus"></i></button>
+        <div class="faq-a"><p>Every calculator lets you save a calculation to your browser, export the breakdown as CSV, and download a clean PDF summary to keep or share.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is my data stored on your servers? <i class="fa-solid fa-plus"></i></button>
+        <div class="faq-a"><p>No. All calculations run in your browser and any "saved" data stays in your browser's local storage — we never see your numbers.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Are Hisaab.np calculators free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — every calculator on Hisaab.np is completely free, with no sign-up required."}},
+    {"@type":"Question","name":"Are these calculators accurate for Nepal's tax rules?","acceptedAnswer":{"@type":"Answer","text":"Our tax and loan calculators follow the Inland Revenue Department's current slab rates and common Nepali bank conventions."}},
+    {"@type":"Question","name":"Can I save or export my calculation?","acceptedAnswer":{"@type":"Answer","text":"Every calculator lets you save a calculation, export the breakdown as CSV, and download a PDF summary."}},
+    {"@type":"Question","name":"Is my data stored on your servers?","acceptedAnswer":{"@type":"Answer","text":"No. All calculations run in your browser and saved data stays in local storage."}}
+  ]
+}
+</script>
+
+<!-- ============ NEWSLETTER ============ -->
+<section>
+  <div class="container">
+    <div class="newsletter" data-aos>
+      <svg width="0" height="0"></svg>
+      <h2 data-i18n="news_h2">One rupee-smart tip a week</h2>
+      <p data-i18n="news_p">Short, practical notes on saving, investing and taxes in Nepal. No spam, unsubscribe anytime.</p>
+      <form onsubmit="event.preventDefault(); showToast('Subscribed — welcome aboard!', 'fa-envelope-circle-check');">
+        <input type="email" required data-i18n-ph="news_ph" placeholder="you@email.com">
+        <button class="btn btn-gold" type="submit" data-i18n="news_btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <svg class="brand-mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--crimson)"/><path d="M4 24 L11 12 L15 17 L20 8 L28 24 Z" fill="var(--marigold)"/></svg>
+          <span>Hisaab<span style="color:var(--crimson)">.np</span></span>
+        </a>
+        <p style="font-size:13.5px;" data-i18n="foot_desc">Nepal's largest collection of financial calculators — investment, loan, tax, business, retirement and trading, in one place.</p>
+        <div class="foot-social">
+          <a class="btn-icon" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="btn-icon" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="btn-icon" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5 data-i18n="foot_calc">Calculators</h5>
+        <ul>
+          <li><a href="calculators/sip-calculator.html">SIP Calculator</a></li>
+          <li><a href="calculators/emi-calculator.html">EMI Calculator</a></li>
+          <li><a href="calculators/income-tax-calculator.html">Income Tax Calculator</a></li>
+          <li><a href="calculators/retirement-calculator.html">Retirement Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="foot_resources">Resources</h5>
+        <ul>
+          <li><a href="all-calculators.html">All calculators</a></li>
+          <li><a href="#" data-i18n="foot_sip_guide">SIP guide</a></li>
+          <li><a href="#" data-i18n="foot_loan_guide">Loan guide</a></li>
+          <li><a href="#" data-i18n="foot_tax_guide">Tax guide</a></li>
+          <li><a href="#blog" data-i18n="foot_blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="foot_company">Company</h5>
+        <ul>
+          <li><a href="#" data-i18n="foot_about">About us</a></li>
+          <li><a href="#" data-i18n="foot_contact">Contact</a></li>
+          <li><a href="#" data-i18n="foot_faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="foot_legal">Legal</h5>
+        <ul>
+          <li><a href="#" data-i18n="foot_privacy">Privacy policy</a></li>
+          <li><a href="#" data-i18n="foot_terms">Terms of use</a></li>
+          <li><a href="#" data-i18n="foot_disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot_rights">© 2026 Hisaab.np — All calculations are estimates, not financial advice.</span>
+      <span>Made in Nepal 🇳🇵</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+  new Swiper(".feat-swiper", { slidesPerView:1.1, spaceBetween:18, pagination:{el:".feat-swiper .swiper-pagination", clickable:true}, breakpoints:{640:{slidesPerView:2,spaceBetween:20},1024:{slidesPerView:4,spaceBetween:22}} });
+  new Swiper(".testi-swiper", { slidesPerView:1.1, spaceBetween:18, pagination:{el:".testi-swiper .swiper-pagination", clickable:true}, breakpoints:{640:{slidesPerView:2,spaceBetween:20},1024:{slidesPerView:3,spaceBetween:22}} });
+
+  // animate hero stat numbers once visible
+  const statEls = document.querySelectorAll(".hero-stats b");
+  // (kept static/text since values are short codes like "40+", animation not needed here)
+</script>
+</body>
+</html>
