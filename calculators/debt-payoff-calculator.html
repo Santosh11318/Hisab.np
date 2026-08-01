@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Average Price Calculator Nepal | Hisaab.np</title>
-<meta name="description" content="Calculate your weighted average buy price across multiple share purchases.">
+<title>Debt Payoff Calculator Nepal | Hisaab.np</title>
+<meta name="description" content="Find out how long it takes to clear a debt with a fixed monthly payment.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://hisaab.np/calculators/average-price-calculator.html">
+<link rel="canonical" href="https://hisaab.np/calculators/debt-payoff-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Average Price Calculator | Hisaab.np">
-<meta property="og:description" content="Calculate your weighted average buy price across multiple share purchases.">
+<meta property="og:title" content="Debt Payoff Calculator | Hisaab.np">
+<meta property="og:description" content="Find out how long it takes to clear a debt with a fixed monthly payment.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23A63446%22/><path d=%22M4 24 L11 12 L15 17 L20 8 L28 24 Z%22 fill=%22%23D9A441%22/></svg>">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Trading","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Average Price Calculator","item":"https://hisaab.np/calculators/average-price-calculator.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why isn't this just the average of the two prices?","acceptedAnswer":{"@type":"Answer","text":"Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one."}},{"@type":"Question","name":"What if I have more than three purchase lots?","acceptedAnswer":{"@type":"Answer","text":"Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Loan","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Debt Payoff Calculator","item":"https://hisaab.np/calculators/debt-payoff-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What happens if my payment barely covers the interest?","acceptedAnswer":{"@type":"Answer","text":"If the payment doesn't exceed the monthly interest charge, the debt will never reduce — the calculator flags this case."}},{"@type":"Question","name":"Should I pay off the highest-interest or the smallest debt first?","acceptedAnswer":{"@type":"Answer","text":"Paying the highest-interest debt first (the 'avalanche' method) saves the most money; paying the smallest balance first (the 'snowball' method) can help with motivation — both are valid strategies."}}]}</script>
 </head>
 <body>
 
@@ -57,15 +57,15 @@
 <div class="container">
   <div class="breadcrumb">
     <a href="../index.html" data-i18n="breadcrumb_home">Home</a><span>/</span>
-    <a href="../index.html#categories" data-i18n="nav_trading">Trading</a><span>/</span>
-    <span style="color:var(--ink);font-weight:600;">Average Price Calculator</span>
+    <a href="../index.html#categories" data-i18n="nav_loan">Loan</a><span>/</span>
+    <span style="color:var(--ink);font-weight:600;">Debt Payoff Calculator</span>
   </div>
 </div>
 
 <header class="container calc-hero">
-  <span class="eyebrow">Trading Calculator</span>
-  <h1>Average Price Calculator</h1>
-  <p style="max-width:60ch;font-size:16px;">Calculate your weighted average buy price across multiple share purchases.</p>
+  <span class="eyebrow">Loan Calculator</span>
+  <h1>Debt Payoff Calculator</h1>
+  <p style="max-width:60ch;font-size:16px;">Find out how long it takes to clear a debt with a fixed monthly payment.</p>
 </header>
 
 <main class="container">
@@ -103,30 +103,30 @@
   <div class="content-grid">
     <div>
       <h2 data-i18n="calc_formula_t">Formula used</h2>
-      <div class="formula-box">Average Price = Σ(Quantity × Price for each lot) ÷ Σ(Quantity for each lot)</div>
+      <div class="formula-box">Each month: Interest = Balance × monthly rate; Principal paid = Payment − Interest; repeat until Balance reaches 0.</div>
 
       <h2 data-i18n="calc_explain_t">How it works</h2>
-      <p>When you buy the same stock across multiple transactions at different prices, your true cost basis is the weighted average, not a simple average of the prices — this weights each lot by how many shares it contains.</p>
+      <p>Instead of solving for the EMI, this calculator takes a fixed monthly payment you can afford and works out how many months it takes to fully clear the debt, along with total interest paid.</p>
 
       <h2 data-i18n="calc_adv_t">Why it helps</h2>
       <ul class="advantage-list">
-        <li><i class="fa-solid fa-check"></i> Gives your true break-even price across all purchases.</li>
-        <li><i class="fa-solid fa-check"></i> Useful for tracking cost basis for capital gains calculations.</li>
-        <li><i class="fa-solid fa-check"></i> Supports up to three lots — leave unused lots at zero.</li>
+        <li><i class="fa-solid fa-check"></i> Useful when you know your budget but not your payoff timeline.</li>
+        <li><i class="fa-solid fa-check"></i> Shows immediately if a payment is too low to ever clear the debt.</li>
+        <li><i class="fa-solid fa-check"></i> Helps prioritize which of several debts to attack first.</li>
       </ul>
 
       <h2 data-i18n="calc_example_t">Worked example</h2>
-      <div class="example-box"><p style="margin:0;">Buying 100 shares at Rs 500 and 50 more at Rs 560 gives a weighted average price of about Rs 520, not Rs 530 (the simple average).</p></div>
+      <div class="example-box"><p style="margin:0;">A Rs 3,00,000 debt at 15% interest paid off at Rs 15,000/month clears in a little under 24 months, with roughly Rs 40,000-45,000 in total interest.</p></div>
 
       <h2 data-i18n="calc_faq_t">FAQs</h2>
       <div class="faq-list">
         <div class="faq-item open">
-          <button class="faq-q">Why isn't this just the average of the two prices? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a" style="max-height:200px;"><p>Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one.</p></div>
+          <button class="faq-q">What happens if my payment barely covers the interest? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a" style="max-height:200px;"><p>If the payment doesn't exceed the monthly interest charge, the debt will never reduce — the calculator flags this case.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">What if I have more than three purchase lots? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a"><p>Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase.</p></div>
+          <button class="faq-q">Should I pay off the highest-interest or the smallest debt first? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Paying the highest-interest debt first (the 'avalanche' method) saves the most money; paying the smallest balance first (the 'snowball' method) can help with motivation — both are valid strategies.</p></div>
         </div>
       </div>
     </div>
@@ -134,8 +134,9 @@
       <div class="sidebar-card">
         <h5 data-i18n="calc_related_t">Related calculators</h5>
         <ul class="related-list">
-          <li><a href="profit-loss-calculator.html">Profit Loss Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
-          <li><a href="stock-return-calculator.html">Stock Return Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="credit-card-payoff-calculator.html">Credit Card Payoff Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="credit-card-emi-calculator.html">Credit Card EMI Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="emergency-fund-calculator.html">Emergency Fund Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
         </ul>
       </div>
       <div class="sidebar-card">
@@ -163,17 +164,25 @@
 <script src="../js/calc-common.js"></script>
 <script>
 window.CALC = {
-  slug: "average-price-calculator",
-  title: "Average Price Calculator",
-  fields: [{"id":"qty1","label":"Lot 1 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":100},{"id":"price1","label":"Lot 1 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":500},{"id":"qty2","label":"Lot 2 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":50},{"id":"price2","label":"Lot 2 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":560},{"id":"qty3","label":"Lot 3 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":0},{"id":"price3","label":"Lot 3 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":0}],
+  slug: "debt-payoff-calculator",
+  title: "Debt Payoff Calculator",
+  fields: [{"id":"debt","label":"Total debt","unit":"Rs","min":1000,"max":5000000,"step":1000,"default":300000},{"id":"rate","label":"Annual interest rate","unit":"%","min":1,"max":40,"step":0.5,"default":15},{"id":"payment","label":"Monthly payment","unit":"Rs","min":500,"max":500000,"step":500,"default":15000}],
   compute: function(inputs){
-    const totalQty = inputs.qty1+inputs.qty2+inputs.qty3;
-    const totalCost = inputs.qty1*inputs.price1 + inputs.qty2*inputs.price2 + inputs.qty3*inputs.price3;
-    const avg = totalQty>0 ? totalCost/totalQty : 0;
+    const i = inputs.rate/100/12;
+    let balance=inputs.debt, months=0, totalInterest=0;
+    while(balance>0.5 && months<600){
+      months++;
+      const interest = balance*i;
+      let principalPaid = inputs.payment-interest;
+      if(principalPaid<=0){ months=600; break; }
+      if(principalPaid>balance) principalPaid=balance;
+      totalInterest += interest;
+      balance -= principalPaid;
+    }
     return {
-      primary:{label:"Weighted average price", value:avg, format:"npr"},
-      secondary:[{label:"Total quantity",value:totalQty,format:"number"},{label:"Total cost",value:Math.round(totalCost),format:"npr"}],
-      chart:{type:"bar", labels:["Lot 1","Lot 2","Lot 3"], data:[inputs.qty1*inputs.price1, inputs.qty2*inputs.price2, inputs.qty3*inputs.price3]}
+      primary:{label: months>=600 ? "Payment too low to clear debt" : "Months to pay off", value: months>=600 ? 0 : months, format:"months"},
+      secondary:[{label:"Total interest",value:Math.round(totalInterest),format:"npr"},{label:"Total paid",value:Math.round(inputs.debt+totalInterest),format:"npr"}],
+      chart:{type:"pie", labels:["Principal","Interest"], data:[inputs.debt, Math.round(totalInterest)]}
     };
   }
 };

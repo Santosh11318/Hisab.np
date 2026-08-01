@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan EMI Calculator Nepal — Home, Car &amp; Personal Loan | Hisaab.np</title>
+<meta name="description" content="Free EMI calculator for Nepal. Calculate your monthly EMI, total interest, and full amortization schedule for home, car, personal, education and gold loans.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hisaab.np/calculators/emi-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loan EMI Calculator Nepal | Hisaab.np">
+<meta property="og:description" content="Calculate EMI, total interest and amortization schedule for any loan — built for Nepal.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23A63446%22/><path d=%22M4 24 L11 12 L15 17 L20 8 L28 24 Z%22 fill=%22%23D9A441%22/></svg>">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},
+    {"@type":"ListItem","position":2,"name":"Loan","item":"https://hisaab.np/#categories"},
+    {"@type":"ListItem","position":3,"name":"EMI Calculator","item":"https://hisaab.np/calculators/emi-calculator.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--crimson)"/><path d="M4 24 L11 12 L15 17 L20 8 L28 24 Z" fill="var(--marigold)"/></svg>
+      <span>Hisaab<span style="color:var(--crimson)">.np</span><small data-i18n="brand_tag">Nepal's Financial Calculators</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="sip-calculator.html" data-i18n="nav_investment">Investment</a></li>
+      <li><a class="nav-link" href="emi-calculator.html" data-i18n="nav_loan">Loan</a></li>
+      <li><a class="nav-link" href="income-tax-calculator.html" data-i18n="nav_tax">Tax</a></li>
+      <li><a class="nav-link" href="../index.html#categories" data-i18n="nav_business">Business</a></li>
+      <li><a class="nav-link" href="retirement-calculator.html" data-i18n="nav_retirement">Retirement</a></li>
+      <li><a class="nav-link" href="../index.html#categories" data-i18n="nav_trading">Trading</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="pill-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="np">नेपाली</button>
+      </div>
+      <button class="btn-icon theme-btn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-toggle btn-icon" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <div class="container" style="display:flex;flex-direction:column;gap:4px;padding:14px 24px 24px;">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../all-calculators.html" class="nav-link">All calculators</a>
+      <a href="sip-calculator.html" class="nav-link">SIP Calculator</a>
+      <a href="income-tax-calculator.html" class="nav-link">Income Tax Calculator</a>
+      <a href="retirement-calculator.html" class="nav-link">Retirement Calculator</a>
+    </div>
+  </div>
+</nav>
+<style>.mobile-nav{display:none;background:var(--paper);border-bottom:1px solid var(--line);} .mobile-nav.open{display:block;}</style>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumb_home">Home</a><span>/</span>
+    <a href="../index.html#categories" data-i18n="nav_loan">Loan</a><span>/</span>
+    <span style="color:var(--ink);font-weight:600;">EMI Calculator</span>
+  </div>
+</div>
+
+<header class="container calc-hero">
+  <span class="eyebrow">Loan Calculator</span>
+  <h1>Loan EMI Calculator</h1>
+  <p style="max-width:60ch;font-size:16px;">Calculate your monthly instalment for any loan, see the full amortization schedule, and check how much a prepayment could save you.</p>
+</header>
+
+<main class="container">
+  <div class="calc-layout">
+    <div class="panel">
+      <div class="panel-title" data-i18n="calc_inputs">Your inputs</div>
+
+      <div class="field">
+        <div class="field-top"><label>Loan type</label></div>
+        <div class="pill-row" style="margin-bottom:4px;">
+          <a class="loan-type-btn active" data-amount="3000000" data-rate="9.5" style="cursor:pointer;">Home</a>
+          <a class="loan-type-btn" data-amount="1500000" data-rate="10.5" style="cursor:pointer;">Car</a>
+          <a class="loan-type-btn" data-amount="500000" data-rate="14" style="cursor:pointer;">Personal</a>
+          <a class="loan-type-btn" data-amount="800000" data-rate="8" style="cursor:pointer;">Education</a>
+          <a class="loan-type-btn" data-amount="400000" data-rate="11" style="cursor:pointer;">Gold</a>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-top"><label>Loan amount</label></div>
+        <div class="field-input"><span>Rs</span><input type="number" id="emiPrincipal" value="3000000" min="50000" max="50000000" step="10000"></div>
+        <input type="range" id="emiPrincipalRange" min="50000" max="20000000" step="10000" value="3000000">
+        <div class="field-range-vals"><span>Rs 50K</span><span>Rs 2 Cr</span></div>
+      </div>
+
+      <div class="field">
+        <div class="field-top"><label>Interest rate (annual)</label></div>
+        <div class="field-input"><span>%</span><input type="number" id="emiRate" value="9.5" min="1" max="25" step="0.1"></div>
+        <input type="range" id="emiRateRange" min="1" max="25" step="0.1" value="9.5">
+        <div class="field-range-vals"><span>1%</span><span>25%</span></div>
+      </div>
+
+      <div class="field">
+        <div class="field-top"><label>Loan tenure</label></div>
+        <div class="field-input"><span>Yrs</span><input type="number" id="emiYears" value="20" min="1" max="30" step="1"></div>
+        <input type="range" id="emiYearsRange" min="1" max="30" step="1" value="20">
+        <div class="field-range-vals"><span>1 yr</span><span>30 yrs</span></div>
+      </div>
+
+      <div class="field" style="display:flex;align-items:center;justify-content:space-between;background:var(--paper);padding:14px 16px;border-radius:12px;margin-bottom:16px;">
+        <label style="font-size:14px;" for="emiCompareToggle" data-i18n="calc_compare">Compare scenario</label>
+        <input type="checkbox" id="emiCompareToggle" style="width:20px;height:20px;accent-color:var(--crimson);">
+      </div>
+
+      <div class="field" id="emiExtraField" style="display:none;">
+        <div class="field-top"><label>Extra monthly prepayment</label></div>
+        <div class="field-input"><span>Rs</span><input type="number" id="emiExtra" value="5000" min="0" max="200000" step="500"></div>
+        <input type="range" id="emiExtraRange" min="0" max="100000" step="500" value="5000">
+        <div class="field-range-vals"><span>Rs 0</span><span>Rs 1,00,000</span></div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-ghost btn-sm" id="emiReset"><i class="fa-solid fa-arrows-rotate"></i> <span data-i18n="calc_reset">Reset</span></button>
+        <button class="btn btn-ghost btn-sm" id="emiSave"><i class="fa-regular fa-bookmark"></i> <span data-i18n="calc_save">Save</span></button>
+      </div>
+    </div>
+
+    <div>
+      <div class="result-hero">
+        <span class="eyebrow" data-i18n="calc_result">Result</span>
+        <div class="result-big" id="emiAmount">Rs 0</div>
+        <div class="result-sub">Your monthly EMI</div>
+        <div class="result-grid">
+          <div><b id="emiTotalInterest">—</b><span>Total interest</span></div>
+          <div><b id="emiTotalPayment">—</b><span>Total payment</span></div>
+          <div><b id="emiTenureOut">—</b><span>Payoff time</span></div>
+        </div>
+        <div id="emiSavedBox" style="display:none;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;">
+          <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:14px;"><b class="mono" id="emiMonthsSaved" style="display:block;font-size:16px;">—</b><span style="font-size:11px;color:rgba(255,255,255,.65);">Time saved</span></div>
+          <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:14px;"><b class="mono" id="emiInterestSaved" style="display:block;font-size:16px;">—</b><span style="font-size:11px;color:rgba(255,255,255,.65);">Interest saved</span></div>
+        </div>
+        <div class="result-actions">
+          <button data-copy-share><i class="fa-solid fa-share-nodes"></i> <span data-i18n="calc_share">Share</span></button>
+          <button id="emiCopy"><i class="fa-solid fa-copy"></i> <span data-i18n="calc_copy">Copy</span></button>
+          <button id="emiCSV"><i class="fa-solid fa-file-csv"></i> <span data-i18n="calc_csv">Export CSV</span></button>
+          <button id="emiPDF"><i class="fa-solid fa-file-pdf"></i> <span data-i18n="calc_pdf">Download PDF</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">Principal vs Interest</div>
+        <div class="chart-wrap"><canvas id="emiPie"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:22px;">
+    <div class="panel-title">Outstanding balance over time</div>
+    <div class="chart-wrap" style="height:300px;"><canvas id="emiLine"></canvas></div>
+  </div>
+
+  <div class="panel" style="margin-top:22px;">
+    <div class="panel-title">Amortization schedule (yearly)</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Year</th><th>Principal paid</th><th>Interest paid</th><th>Balance</th></tr></thead>
+        <tbody id="emiTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div>
+      <h2 data-i18n="calc_formula_t">Formula used</h2>
+      <div class="formula-box">EMI&nbsp;=&nbsp;P&nbsp;×&nbsp;r&nbsp;×&nbsp;(1&nbsp;+&nbsp;r)<sup>n</sup>&nbsp;/&nbsp;[(1&nbsp;+&nbsp;r)<sup>n</sup>&nbsp;−&nbsp;1]</div>
+      <p>Where <b>P</b> is the loan principal, <b>r</b> is the monthly interest rate (annual rate ÷ 12), and <b>n</b> is the total number of monthly instalments.</p>
+
+      <h2 data-i18n="calc_explain_t">How it works</h2>
+      <p>Every EMI is split into an interest portion and a principal portion. Early in the loan, most of your EMI goes toward interest because the outstanding balance is high; as the balance shrinks, more of each EMI goes toward principal. The amortization schedule above shows this shift year by year.</p>
+
+      <h2 data-i18n="calc_adv_t">Why it helps</h2>
+      <ul class="advantage-list">
+        <li><i class="fa-solid fa-check"></i> Plan your monthly budget before applying for a loan.</li>
+        <li><i class="fa-solid fa-check"></i> See exactly how much interest you'll pay over the loan's life.</li>
+        <li><i class="fa-solid fa-check"></i> Test whether a small prepayment meaningfully shortens your loan.</li>
+        <li><i class="fa-solid fa-check"></i> Compare EMIs across loan types before choosing a bank.</li>
+      </ul>
+
+      <h2 data-i18n="calc_example_t">Worked example</h2>
+      <div class="example-box">
+        <p style="margin:0;">A <b>Rs 30 lakh</b> home loan at <b>9.5%</b> for <b>20 years</b> works out to an EMI of roughly <b>Rs 27,950</b>, with total interest of about <b>Rs 37 lakh</b> paid over the tenure — adjust the sliders above to match your own loan offer.</p>
+      </div>
+
+      <h2 data-i18n="calc_faq_t">FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q">Does prepayment always reduce EMI? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a" style="max-height:200px;"><p>Most Nepali banks apply extra payments to reduce the loan tenure while keeping the EMI the same — that's what this calculator assumes for the "compare scenario" option.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is the interest rate fixed or floating in this calculator? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>The calculator assumes a fixed rate for simplicity. If your bank uses a floating rate, your actual EMI or tenure will vary as the base rate changes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What documents affect my actual loan eligibility? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Banks in Nepal typically look at income proof, existing liabilities, collateral value and credit history — this calculator only estimates the EMI, not your eligibility.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="sidebar-card">
+        <h5 data-i18n="calc_related_t">Related calculators</h5>
+        <ul class="related-list">
+          <li><a href="#">Loan Eligibility Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="#">Loan Prepayment Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="#">Balance Transfer Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="sip-calculator.html">SIP Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h5>Disclaimer</h5>
+        <p style="font-size:12.5px;margin:0;">This tool provides an estimate only. Actual EMI depends on your bank's terms, processing fees and rate type.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer style="margin-top:70px;">
+  <div class="container">
+    <div class="foot-bottom" style="border-top:none;padding-top:0;">
+      <span data-i18n="foot_rights">© 2026 Hisaab.np — All calculations are estimates, not financial advice.</span>
+      <span>Made in Nepal 🇳🇵</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/calc-common.js"></script>
+<script src="../js/calc-emi.js"></script>
+</body>
+</html>

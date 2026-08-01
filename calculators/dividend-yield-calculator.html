@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Average Price Calculator Nepal | Hisaab.np</title>
-<meta name="description" content="Calculate your weighted average buy price across multiple share purchases.">
+<title>Dividend Yield Calculator Nepal | Hisaab.np</title>
+<meta name="description" content="Calculate the dividend yield of a stock from its price and annual dividend.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://hisaab.np/calculators/average-price-calculator.html">
+<link rel="canonical" href="https://hisaab.np/calculators/dividend-yield-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Average Price Calculator | Hisaab.np">
-<meta property="og:description" content="Calculate your weighted average buy price across multiple share purchases.">
+<meta property="og:title" content="Dividend Yield Calculator | Hisaab.np">
+<meta property="og:description" content="Calculate the dividend yield of a stock from its price and annual dividend.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23A63446%22/><path d=%22M4 24 L11 12 L15 17 L20 8 L28 24 Z%22 fill=%22%23D9A441%22/></svg>">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Trading","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Average Price Calculator","item":"https://hisaab.np/calculators/average-price-calculator.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why isn't this just the average of the two prices?","acceptedAnswer":{"@type":"Answer","text":"Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one."}},{"@type":"Question","name":"What if I have more than three purchase lots?","acceptedAnswer":{"@type":"Answer","text":"Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Trading","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Dividend Yield Calculator","item":"https://hisaab.np/calculators/dividend-yield-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a higher dividend yield always better?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily — a very high yield can sometimes signal a falling share price (the denominator dropping) or an unsustainable payout, so check the company's fundamentals too."}},{"@type":"Question","name":"How does bonus share issuance affect dividend yield?","acceptedAnswer":{"@type":"Answer","text":"Bonus shares increase your share count but typically don't change total dividend income proportionally in the short term — check the company's dividend policy on bonus shares specifically."}}]}</script>
 </head>
 <body>
 
@@ -58,14 +58,14 @@
   <div class="breadcrumb">
     <a href="../index.html" data-i18n="breadcrumb_home">Home</a><span>/</span>
     <a href="../index.html#categories" data-i18n="nav_trading">Trading</a><span>/</span>
-    <span style="color:var(--ink);font-weight:600;">Average Price Calculator</span>
+    <span style="color:var(--ink);font-weight:600;">Dividend Yield Calculator</span>
   </div>
 </div>
 
 <header class="container calc-hero">
   <span class="eyebrow">Trading Calculator</span>
-  <h1>Average Price Calculator</h1>
-  <p style="max-width:60ch;font-size:16px;">Calculate your weighted average buy price across multiple share purchases.</p>
+  <h1>Dividend Yield Calculator</h1>
+  <p style="max-width:60ch;font-size:16px;">Calculate the dividend yield of a stock from its price and annual dividend.</p>
 </header>
 
 <main class="container">
@@ -103,30 +103,30 @@
   <div class="content-grid">
     <div>
       <h2 data-i18n="calc_formula_t">Formula used</h2>
-      <div class="formula-box">Average Price = Σ(Quantity × Price for each lot) ÷ Σ(Quantity for each lot)</div>
+      <div class="formula-box">Dividend Yield (%) = Annual Dividend per Share ÷ Current Share Price × 100</div>
 
       <h2 data-i18n="calc_explain_t">How it works</h2>
-      <p>When you buy the same stock across multiple transactions at different prices, your true cost basis is the weighted average, not a simple average of the prices — this weights each lot by how many shares it contains.</p>
+      <p>Dividend yield shows the annual dividend income as a percentage of the current share price — a quick way to compare the 'income' return of different dividend-paying stocks.</p>
 
       <h2 data-i18n="calc_adv_t">Why it helps</h2>
       <ul class="advantage-list">
-        <li><i class="fa-solid fa-check"></i> Gives your true break-even price across all purchases.</li>
-        <li><i class="fa-solid fa-check"></i> Useful for tracking cost basis for capital gains calculations.</li>
-        <li><i class="fa-solid fa-check"></i> Supports up to three lots — leave unused lots at zero.</li>
+        <li><i class="fa-solid fa-check"></i> Useful for comparing income potential across bank, hydropower, or insurance stocks on NEPSE.</li>
+        <li><i class="fa-solid fa-check"></i> Simple, widely reported metric for income-focused investors.</li>
+        <li><i class="fa-solid fa-check"></i> Quick sanity check alongside a stock's price appreciation potential.</li>
       </ul>
 
       <h2 data-i18n="calc_example_t">Worked example</h2>
-      <div class="example-box"><p style="margin:0;">Buying 100 shares at Rs 500 and 50 more at Rs 560 gives a weighted average price of about Rs 520, not Rs 530 (the simple average).</p></div>
+      <div class="example-box"><p style="margin:0;">A stock paying Rs 15 in annual dividends per share at a Rs 500 price has a 3% dividend yield.</p></div>
 
       <h2 data-i18n="calc_faq_t">FAQs</h2>
       <div class="faq-list">
         <div class="faq-item open">
-          <button class="faq-q">Why isn't this just the average of the two prices? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a" style="max-height:200px;"><p>Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one.</p></div>
+          <button class="faq-q">Is a higher dividend yield always better? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a" style="max-height:200px;"><p>Not necessarily — a very high yield can sometimes signal a falling share price (the denominator dropping) or an unsustainable payout, so check the company's fundamentals too.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">What if I have more than three purchase lots? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a"><p>Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase.</p></div>
+          <button class="faq-q">How does bonus share issuance affect dividend yield? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Bonus shares increase your share count but typically don't change total dividend income proportionally in the short term — check the company's dividend policy on bonus shares specifically.</p></div>
         </div>
       </div>
     </div>
@@ -134,8 +134,8 @@
       <div class="sidebar-card">
         <h5 data-i18n="calc_related_t">Related calculators</h5>
         <ul class="related-list">
-          <li><a href="profit-loss-calculator.html">Profit Loss Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
           <li><a href="stock-return-calculator.html">Stock Return Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="average-price-calculator.html">Average Price Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
         </ul>
       </div>
       <div class="sidebar-card">
@@ -163,17 +163,15 @@
 <script src="../js/calc-common.js"></script>
 <script>
 window.CALC = {
-  slug: "average-price-calculator",
-  title: "Average Price Calculator",
-  fields: [{"id":"qty1","label":"Lot 1 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":100},{"id":"price1","label":"Lot 1 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":500},{"id":"qty2","label":"Lot 2 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":50},{"id":"price2","label":"Lot 2 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":560},{"id":"qty3","label":"Lot 3 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":0},{"id":"price3","label":"Lot 3 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":0}],
+  slug: "dividend-yield-calculator",
+  title: "Dividend Yield Calculator",
+  fields: [{"id":"dividend","label":"Annual dividend per share","unit":"Rs","min":0,"max":10000,"step":0.5,"default":15},{"id":"price","label":"Current share price","unit":"Rs","min":1,"max":100000,"step":1,"default":500}],
   compute: function(inputs){
-    const totalQty = inputs.qty1+inputs.qty2+inputs.qty3;
-    const totalCost = inputs.qty1*inputs.price1 + inputs.qty2*inputs.price2 + inputs.qty3*inputs.price3;
-    const avg = totalQty>0 ? totalCost/totalQty : 0;
+    const yieldPct = inputs.price>0 ? inputs.dividend/inputs.price*100 : 0;
     return {
-      primary:{label:"Weighted average price", value:avg, format:"npr"},
-      secondary:[{label:"Total quantity",value:totalQty,format:"number"},{label:"Total cost",value:Math.round(totalCost),format:"npr"}],
-      chart:{type:"bar", labels:["Lot 1","Lot 2","Lot 3"], data:[inputs.qty1*inputs.price1, inputs.qty2*inputs.price2, inputs.qty3*inputs.price3]}
+      primary:{label:"Dividend yield", value:yieldPct, format:"percent"},
+      secondary:[{label:"Annual dividend per share",value:inputs.dividend,format:"npr"}],
+      chart:{type:"bar", labels:["Share price","Annual dividend"], data:[inputs.price, inputs.dividend]}
     };
   }
 };

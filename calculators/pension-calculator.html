@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Average Price Calculator Nepal | Hisaab.np</title>
-<meta name="description" content="Calculate your weighted average buy price across multiple share purchases.">
+<title>Pension Calculator Nepal | Hisaab.np</title>
+<meta name="description" content="Calculate the monthly pension a retirement corpus can sustainably pay out.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://hisaab.np/calculators/average-price-calculator.html">
+<link rel="canonical" href="https://hisaab.np/calculators/pension-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Average Price Calculator | Hisaab.np">
-<meta property="og:description" content="Calculate your weighted average buy price across multiple share purchases.">
+<meta property="og:title" content="Pension Calculator | Hisaab.np">
+<meta property="og:description" content="Calculate the monthly pension a retirement corpus can sustainably pay out.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23A63446%22/><path d=%22M4 24 L11 12 L15 17 L20 8 L28 24 Z%22 fill=%22%23D9A441%22/></svg>">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Trading","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Average Price Calculator","item":"https://hisaab.np/calculators/average-price-calculator.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why isn't this just the average of the two prices?","acceptedAnswer":{"@type":"Answer","text":"Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one."}},{"@type":"Question","name":"What if I have more than three purchase lots?","acceptedAnswer":{"@type":"Answer","text":"Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hisaab.np/"},{"@type":"ListItem","position":2,"name":"Retirement","item":"https://hisaab.np/#categories"},{"@type":"ListItem","position":3,"name":"Pension Calculator","item":"https://hisaab.np/calculators/pension-calculator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What happens if I withdraw more than this amount?","acceptedAnswer":{"@type":"Answer","text":"Withdrawing more than the sustainable pension will deplete the corpus before the payout period ends — see the SWP Calculator to model different withdrawal amounts."}},{"@type":"Question","name":"Does this account for inflation during retirement?","acceptedAnswer":{"@type":"Answer","text":"No — for an inflation-adjusted plan, see the Retirement Corpus Calculator, which factors in rising expenses year over year."}}]}</script>
 </head>
 <body>
 
@@ -57,15 +57,15 @@
 <div class="container">
   <div class="breadcrumb">
     <a href="../index.html" data-i18n="breadcrumb_home">Home</a><span>/</span>
-    <a href="../index.html#categories" data-i18n="nav_trading">Trading</a><span>/</span>
-    <span style="color:var(--ink);font-weight:600;">Average Price Calculator</span>
+    <a href="../index.html#categories" data-i18n="nav_retirement">Retirement</a><span>/</span>
+    <span style="color:var(--ink);font-weight:600;">Pension Calculator</span>
   </div>
 </div>
 
 <header class="container calc-hero">
-  <span class="eyebrow">Trading Calculator</span>
-  <h1>Average Price Calculator</h1>
-  <p style="max-width:60ch;font-size:16px;">Calculate your weighted average buy price across multiple share purchases.</p>
+  <span class="eyebrow">Retirement Calculator</span>
+  <h1>Pension Calculator</h1>
+  <p style="max-width:60ch;font-size:16px;">Calculate the monthly pension a retirement corpus can sustainably pay out.</p>
 </header>
 
 <main class="container">
@@ -103,30 +103,30 @@
   <div class="content-grid">
     <div>
       <h2 data-i18n="calc_formula_t">Formula used</h2>
-      <div class="formula-box">Average Price = Σ(Quantity × Price for each lot) ÷ Σ(Quantity for each lot)</div>
+      <div class="formula-box">Monthly Pension = Corpus × i ÷ [1 − (1+i)⁻ⁿ], where i is the monthly return and n the number of payout months.</div>
 
       <h2 data-i18n="calc_explain_t">How it works</h2>
-      <p>When you buy the same stock across multiple transactions at different prices, your true cost basis is the weighted average, not a simple average of the prices — this weights each lot by how many shares it contains.</p>
+      <p>This treats your retirement corpus like an annuity: it calculates the fixed monthly amount that fully depletes the corpus (plus ongoing growth) exactly at the end of your chosen payout period.</p>
 
       <h2 data-i18n="calc_adv_t">Why it helps</h2>
       <ul class="advantage-list">
-        <li><i class="fa-solid fa-check"></i> Gives your true break-even price across all purchases.</li>
-        <li><i class="fa-solid fa-check"></i> Useful for tracking cost basis for capital gains calculations.</li>
-        <li><i class="fa-solid fa-check"></i> Supports up to three lots — leave unused lots at zero.</li>
+        <li><i class="fa-solid fa-check"></i> Converts a lump sum into a concrete monthly income figure.</li>
+        <li><i class="fa-solid fa-check"></i> Helps decide if your current corpus is enough, or needs topping up.</li>
+        <li><i class="fa-solid fa-check"></i> Adjustable payout period matches your expected retirement length.</li>
       </ul>
 
       <h2 data-i18n="calc_example_t">Worked example</h2>
-      <div class="example-box"><p style="margin:0;">Buying 100 shares at Rs 500 and 50 more at Rs 560 gives a weighted average price of about Rs 520, not Rs 530 (the simple average).</p></div>
+      <div class="example-box"><p style="margin:0;">A Rs 1 crore corpus earning 7% and paid out over 20 years can sustainably support a pension of roughly Rs 77,000-78,000 a month.</p></div>
 
       <h2 data-i18n="calc_faq_t">FAQs</h2>
       <div class="faq-list">
         <div class="faq-item open">
-          <button class="faq-q">Why isn't this just the average of the two prices? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a" style="max-height:200px;"><p>Because the lots have different sizes — a simple average would incorrectly give equal weight to a small lot and a large one.</p></div>
+          <button class="faq-q">What happens if I withdraw more than this amount? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a" style="max-height:200px;"><p>Withdrawing more than the sustainable pension will deplete the corpus before the payout period ends — see the SWP Calculator to model different withdrawal amounts.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">What if I have more than three purchase lots? <i class="fa-solid fa-plus"></i></button>
-          <div class="faq-a"><p>Combine smaller lots at the same or similar price into one entry, or calculate cumulatively: treat your running average as 'Lot 1' when adding a new purchase.</p></div>
+          <button class="faq-q">Does this account for inflation during retirement? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>No — for an inflation-adjusted plan, see the Retirement Corpus Calculator, which factors in rising expenses year over year.</p></div>
         </div>
       </div>
     </div>
@@ -134,8 +134,8 @@
       <div class="sidebar-card">
         <h5 data-i18n="calc_related_t">Related calculators</h5>
         <ul class="related-list">
-          <li><a href="profit-loss-calculator.html">Profit Loss Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
-          <li><a href="stock-return-calculator.html">Stock Return Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="retirement-calculator.html">Retirement Corpus Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="swp-calculator.html">SWP Calculator <i class="fa-solid fa-arrow-right"></i></a></li>
         </ul>
       </div>
       <div class="sidebar-card">
@@ -163,17 +163,16 @@
 <script src="../js/calc-common.js"></script>
 <script>
 window.CALC = {
-  slug: "average-price-calculator",
-  title: "Average Price Calculator",
-  fields: [{"id":"qty1","label":"Lot 1 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":100},{"id":"price1","label":"Lot 1 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":500},{"id":"qty2","label":"Lot 2 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":50},{"id":"price2","label":"Lot 2 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":560},{"id":"qty3","label":"Lot 3 — quantity","unit":"Qty","min":0,"max":100000,"step":1,"default":0},{"id":"price3","label":"Lot 3 — price","unit":"Rs","min":0,"max":100000,"step":1,"default":0}],
+  slug: "pension-calculator",
+  title: "Pension Calculator",
+  fields: [{"id":"corpus","label":"Retirement corpus","unit":"Rs","min":100000,"max":100000000,"step":10000,"default":10000000},{"id":"rate","label":"Expected annual return","unit":"%","min":1,"max":20,"step":0.5,"default":7},{"id":"years","label":"Payout period","unit":"Yrs","min":1,"max":40,"step":1,"default":20}],
   compute: function(inputs){
-    const totalQty = inputs.qty1+inputs.qty2+inputs.qty3;
-    const totalCost = inputs.qty1*inputs.price1 + inputs.qty2*inputs.price2 + inputs.qty3*inputs.price3;
-    const avg = totalQty>0 ? totalCost/totalQty : 0;
+    const i = inputs.rate/100/12, n = inputs.years*12;
+    const pension = i===0 ? inputs.corpus/n : inputs.corpus*i/(1-Math.pow(1+i,-n));
     return {
-      primary:{label:"Weighted average price", value:avg, format:"npr"},
-      secondary:[{label:"Total quantity",value:totalQty,format:"number"},{label:"Total cost",value:Math.round(totalCost),format:"npr"}],
-      chart:{type:"bar", labels:["Lot 1","Lot 2","Lot 3"], data:[inputs.qty1*inputs.price1, inputs.qty2*inputs.price2, inputs.qty3*inputs.price3]}
+      primary:{label:"Sustainable monthly pension", value:Math.round(pension), format:"npr"},
+      secondary:[{label:"Total payout over period",value:Math.round(pension*n),format:"npr"}],
+      chart:{type:"pie", labels:["Corpus","Extra from growth"], data:[inputs.corpus, Math.max(Math.round(pension*n-inputs.corpus),0)]}
     };
   }
 };
